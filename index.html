@@ -55,47 +55,47 @@
 					</tbody>
 				</table>
 				<!--Formulário de inclusão de encomendas -->
-			<section class="container">
-			<h2 id="titulo-form">Adicionar nova encomenda</h2>
-			<ul id="mensagens-erro"></ul>
-			<form id="form-adiciona">
-				<div class="grupo">
-					<label for="nome">Nome:</label>
-					<input type="text" id="nome" name="nome" placeholder="Digite o nome do(a) cliente" class="campo" required>
-				</div>
-				<div class="grupo">
-					<label for="qtde">Qtde:</label>
-					<input type="number" id="qtde" name="qtde" placeholder="Digite a quantidade encomendada" class="campo campo-medio" required>
-				</div>
-				<div class="grupo">
-					<label for="produto">Produto:</label>
-					<select id="produto" name="produto" class="campo campo-medio">
-						<option value="">Selecione</option>
-						<option>Jogo Americano (4 peças) - Rosa</option>
-						<option>Jogo Americano (4 peças) - Amarelo</option>
-						<option>Jogo Americano (4 peças) - Verde</option>
-						<option>Tapetes Cozinha (3 peças) - Azul</option>
-						<option>Tapetes Cozinha (3 peças) - Rosa</option>
-						<option>Tapetes Cozinha (3 peças) - Amarelo</option>
-						<option>Tapetes Cozinha (3 peças) - Vermelho</option>
-						<option>Pulseira Cristal - Colorida</option>
-						<option>Pulseira Cristal - Vermelha</option>
-						<option>Pulseira Cristal - Rosa</option>
-						<option>Pulseira Cristal - Lilás</option>
-						<option>Pulseira Cristal - Preta</option>
-					</select>
-				</div>
-				<div class="grupo">
-					<label for="unitario">R$ Unitário:</label>
-					<input type="number" id="unitario" name="unitario" placeholder="Digite o valor unitário do produto" class="campo campo-medio" required>
-				</div>
-
-				<!-- <button id="adicionar-encomenda" class="botao bto-principal">Adicionar</button> -->
-				<input type="submit" id="adicionar-encomenda" class="botao bto-principal">
-			</form>
-		</section>
+				<h2 id="titulo-form">Adicionar nova encomenda</h2>
+				<!--Exibe os erros de validação do formulário-->
+				<ul id="mensagens-erro"></ul>
+				<form id="form-adiciona">
+					<div class="grupo">
+						<label for="nome">Nome:</label>
+						<input type="text" id="nome" name="nome" placeholder="Digite o nome do(a) cliente" class="campo" required>
+					</div>
+					<div class="grupo">
+						<label for="qtde">Qtde:</label>
+						<input type="number" id="qtde" name="qtde" placeholder="Digite a quantidade encomendada" class="campo campo-medio" required>
+					</div>
+					<div class="grupo">
+						<label for="produto">Produto:</label>
+						<select id="produto" name="produto" class="campo campo-medio">
+							<option value="">Selecione</option>
+							<option>Jogo Americano (4 peças) - Rosa</option>
+							<option>Jogo Americano (4 peças) - Amarelo</option>
+							<option>Jogo Americano (4 peças) - Verde</option>
+							<option>Tapetes Cozinha (3 peças) - Azul</option>
+							<option>Tapetes Cozinha (3 peças) - Rosa</option>
+							<option>Tapetes Cozinha (3 peças) - Amarelo</option>
+							<option>Tapetes Cozinha (3 peças) - Vermelho</option>
+							<option>Pulseira Cristal - Colorida</option>
+							<option>Pulseira Cristal - Vermelha</option>
+							<option>Pulseira Cristal - Rosa</option>
+							<option>Pulseira Cristal - Lilás</option>
+							<option>Pulseira Cristal - Preta</option>
+						</select>
+					</div>
+					<div class="grupo">
+						<label for="unitario">R$ Unitário:</label>
+						<input type="number" id="unitario" name="unitario" placeholder="Digite o valor unitário do produto" class="campo campo-medio" required>
+					</div>
+					<!-- <button id="adicionar-encomenda" class="botao bto-principal">Adicionar</button> -->
+					<input type="submit" id="adicionar-encomenda" class="botao bto-principal">
+				</form>
+			</section>
 		</main>
 		<script src="js/calcula-total.js"></script>
 		<script src="js/form.js"></script>
+		<script src="js/remover-encomenda.js"></script>
 	</body>
 </html>
