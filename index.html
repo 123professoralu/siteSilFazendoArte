@@ -13,6 +13,8 @@
 		<main>
 			<section class="container">
 				<h2 class="titulo">Encomendas</h2>
+				<label for="filtrar-tabela">Filtrar</label>
+				<input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do cliente">
 				<table>
 					<thead>
 						<tr>
@@ -54,6 +56,8 @@
 						</tr>
 					</tbody>
 				</table>
+				<button id="buscar-encomendas" class="botao">Buscar Encomendas</button>
+
 				<!--Formulário de inclusão de encomendas -->
 				<h2 id="titulo-form">Adicionar nova encomenda</h2>
 				<!--Exibe os erros de validação do formulário-->
@@ -90,12 +94,14 @@
 						<input type="number" id="unitario" name="unitario" placeholder="Digite o valor unitário do produto" class="campo campo-medio" required>
 					</div>
 					<!-- <button id="adicionar-encomenda" class="botao bto-principal">Adicionar</button> -->
-					<input type="submit" id="adicionar-encomenda" class="botao bto-principal">
+					<input type="submit" id="adicionar-encomenda" class="botao">
 				</form>
 			</section>
 		</main>
 		<script src="js/calcula-total.js"></script>
 		<script src="js/form.js"></script>
 		<script src="js/remover-encomenda.js"></script>
+		<script src="js/filtrar.js"></script>
+		<script src="js/buscar-encomendas.js"></script>
 	</body>
 </html>
